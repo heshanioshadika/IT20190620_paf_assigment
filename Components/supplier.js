@@ -128,6 +128,30 @@ if (status == "success")
 //CLIENTMODEL=========================================================================
 function validateUserForm()
 {
+		if ($("#name").val().trim() == "")
+{
+return "Insert name.";
+}
+
+if ($("#account_number").val().trim() == "")
+{
+return "Insert acc number name.";
+}
+
+if ($("#date").val() == "0")
+{
+return "Select year.";
+}
+
+if ($("#units").val() == "0")
+{
+return "Select units.";
+}
+
+if ($("#unit_price").val() == "0")
+{
+return "input price.";
+}
 return true;
 }
 
